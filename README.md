@@ -1,11 +1,9 @@
-JavaScript ES7 "async/await" Demo
-=================================
+JavaScript Async Nested "await" Demo
+====================================
 
-ES7原来和ES2016是一个规范。
+如果代码比较复杂，比如在`if`或者`for`中使用`await`，它是否还能正常运作，有没有什么限制？
 
-在这个规范里，增加了`async/await`关键字，从语法层面上增强了`promise`，让我们不再需要写那么多的`then`，让Promise更好用，从而更大程度的解决了JavaScript的回调地狱问题。
-
-使用`async`和`await`这两个关键字，在语法层面上，把“异步代码”变成了“同步代码”。
+答案是没有，写法跟同步代码一样，很好。
 
 ```
 npm install
@@ -15,8 +13,15 @@ npm run demo
 It will print:
 
 ```
-will calculate: 1 + 2
-result: 3
+will calculate: 1 + 1
+will calculate: 1 + 10
+1+10 = 11
+will calculate: 1 + 100
+1+100 = 101
+will calculate: 1 + 1000
+1+1000 = 1001
+will calculate: 1 + 10000
+1+10000 = 10001
+will calculate: 2 + 2
+2+2 = 4
 ```
-
-注意：`result: 3`这一行是在前一行显示3秒后才显示的。
